@@ -47,4 +47,4 @@ const author = document.querySelector("#quote span:last-child");
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)]; // random() returns decimal between 0 and 1, use floor, ceil or round to change decimal to integer
 
 quote.innerText = todaysQuote.quote; // #quote span:first-child's innerText = quotes array's random 'quote'
-author.innerText = todaysQuote.author;
+author.innerText =`- ${todaysQuote.author}`;
