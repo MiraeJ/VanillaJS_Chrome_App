@@ -4,7 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 #background {
     z-index: -999;
@@ -20,19 +20,44 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 50px 0 0 0;
+    color: white;
 }
-#todo-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#todo-form input {
-    width: 25%;
+#login-form input:first-child {
+    width: 22%;
     height: 30px;
     border: none;
     border-bottom: 2px solid #fff;
     background: none;
     text-align: center; 
+    color: #fff;
+}
+#login-form input:last-child {
+    margin-left: 10px;
+    height: 30px;
+    border: 2px solid #fff;
+    background: none;
+    text-align: center; 
+    color: white;
+}
+#todo-form {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#todo-form input {
+    width: 26%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: none;
+    text-align: center; 
+    color: #fff;
+}
+input::placeholder {
+    color: white;
+    font-style: italic;
 }
 ul {
     list-style: none;
@@ -46,7 +71,7 @@ ul {
     justify-content: center;
 }
 #greeting {
-    margin: 0;
+    margin: 20px 0 0 0;
     font-size: 50px;
     color: #fff;
     display: flex;
@@ -55,14 +80,21 @@ ul {
 }
 #todo-list {
     background-color: rgba(0, 0, 0, 0.5);
-    margin: 20px 35% 0 35%;
+    margin: 20px 37% 0 37%;
     padding: 20px;
     text-align: center;
     color: #fff;
 }
+#todo-list li{
+    margin-bottom: 5px;
+}
+#todo-list li:last-child{
+    margin-bottom: 0;
+}
 #todo-list span {
-    font-size: 20px;
-    width: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-right: 10px;
 }
 #todo-list button{
     border: none;
@@ -75,9 +107,10 @@ ul {
     background-size: auto;
     font-size: 16px;
     position: absolute;
-    bottom: 40px;
+    bottom: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 #weather {
     position: absolute;
